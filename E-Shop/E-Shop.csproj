@@ -146,7 +146,11 @@
     <Content Include="eshop\images\cart\one.png" />
     <Content Include="eshop\images\cart\three.png" />
     <Content Include="eshop\images\cart\two.png" />
+    <Content Include="eshop\images\home\atıştırmalık_kampanya.jpg" />
+    <Content Include="eshop\images\home\a_logo.jpg" />
     <Content Include="eshop\images\home\bg_border.png" />
+    <Content Include="eshop\images\home\cart.jpg" />
+    <Content Include="eshop\images\home\evcilhayvan_kampanya.jpg" />
     <Content Include="eshop\images\home\gallery1.jpg" />
     <Content Include="eshop\images\home\gallery2.jpg" />
     <Content Include="eshop\images\home\gallery3.jpg" />
@@ -178,6 +182,8 @@
     <Content Include="eshop\images\home\sale.png" />
     <Content Include="eshop\images\home\searchicon.png" />
     <Content Include="eshop\images\home\shipping.jpg" />
+    <Content Include="eshop\images\home\temelgıda_kampanya.jpg" />
+    <Content Include="eshop\images\home\zulalk.jpg" />
     <Content Include="eshop\images\product-details\1.jpg" />
     <Content Include="eshop\images\product-details\new.jpg" />
     <Content Include="eshop\images\product-details\rating.png" />

@@ -14,13 +14,13 @@ namespace EntityLayer.Entities
 
         [Required(ErrorMessage = "Boş Geçilemez")]
         [Display(Name = "Ad")]
-        [StringLength(50, ErrorMessage = "Maximum 50 karakter olmalıdır")]
+        [StringLength(100, ErrorMessage = "Maximum 100 karakter olmalıdır")]
         public string Name { get; set; }  
 
 
         [Required(ErrorMessage = "Boş Geçilemez")]
         [Display(Name = "Açıklama")]
-        [StringLength(50, ErrorMessage = "Maximum 50 karakter olmalıdır")]
+        [StringLength(100, ErrorMessage = "Maximum 100 karakter olmalıdır")]
         public string Description { get; set; }
 
         [Required(ErrorMessage = "Boş Geçilemez")]
