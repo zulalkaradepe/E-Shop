@@ -12,7 +12,7 @@ namespace E_Shop.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        private ProductRepository productRepository = new ProductRepository();
+        ProductRepository productRepository = new ProductRepository();
         public ActionResult Index(int sayfa = 1)
         {
             return View(productRepository.List().ToPagedList(sayfa, 3));

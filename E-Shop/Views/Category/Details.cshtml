@@ -4,9 +4,9 @@
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<section id="slider">
+<!--<section id="slider">-->
     <!--slider-->
-    <div class="container">
+    <!--<div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div id="slider-carousel" class="carousel slide" data-ride="carousel">
@@ -68,20 +68,21 @@
             </div>
         </div>
     </div>
-</section><!--/slider-->
+</section>--><!--/slider-->
 
 <section>
     <div class="container">
         <div class="row">
             @Html.Action("CategoryList", "Category")
 
-            <div class="col-sm-9 padding-right">
+            <div class="col-sm-8 padding-left">
                 <div class="features_items">
-                    <!--features_items-->
+	                <!--features_items-->
+                    <br/>
                     <h2 class="title text-center">ÜRÜNLERİMİZ</h2>
                     @foreach (var item in Model)
                     {
-                        <div class="col-sm-4">
+                        <div class="col-sm-3">
                             <div class="product-image-wrapper">
                                 <div class="single-products">
                                     <div class="productinfo text-center">
@@ -100,6 +101,10 @@
 
 
                 </div><!--features_items-->
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 @Html.Action("PopularProduct", "Product")
 
             </div>
