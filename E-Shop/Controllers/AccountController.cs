@@ -51,12 +51,6 @@ namespace E_Shop.Controllers
             return View("Login", data);
         }
 
-        //public ActionResult LogOut()
-        //{
-        //    FormsAuthentication.SignOut();
-        //    return RedirectToActionPermanent("Index", "Home");
-        //}
-
         public ActionResult LogOut()
         {
             FormsAuthentication.SignOut();

@@ -6,7 +6,7 @@
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2>Satış Listesi</h2>
+<h2>Sipariş Listesi</h2>
 
 <table class="table table-bordered">
     <tr>
@@ -27,7 +27,7 @@
                 <td>@item.Quantity</td>
                 <td>@item.Price</td>
                 <td><img src="~/Content/Image/@item.Product.Image" width="90" height="90" /></td>
-                <td>@Convert.ToDateTime(item.Date).ToString("dd/mm/yyyy")</td>
+                <td>@Convert.ToDateTime(item.Date).ToString("dd/MM/yyyy")</td>
             </tr>
         </tbody>
     }

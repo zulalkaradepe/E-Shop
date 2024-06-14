@@ -9,7 +9,7 @@ namespace E_Shop.Controllers
 {
     public class CategoryController : Controller
     {
-        // GET: Category
+
         private CategoryRepository categoryRepository = new CategoryRepository();
         public PartialViewResult CategoryList()
         {

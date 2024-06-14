@@ -11,7 +11,7 @@ namespace E_Shop.Controllers
 {
     public class ProductController : Controller
     {
-        // GET: Product
+        
         ProductRepository productRepository = new ProductRepository();
         private DataContext db = new DataContext();
         public PartialViewResult PopularProduct()

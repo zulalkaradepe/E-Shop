@@ -10,7 +10,7 @@ namespace E_Shop.Controllers
 {
     public class CartController : Controller
     {
-        // GET: Cart
+       
         DataContext db = new DataContext();
 
         public ActionResult Index(decimal? Tutar)

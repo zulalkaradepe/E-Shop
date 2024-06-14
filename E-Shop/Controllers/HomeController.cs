@@ -11,7 +11,7 @@ namespace E_Shop.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        
         ProductRepository productRepository = new ProductRepository();
         public ActionResult Index(int sayfa = 1)
         {

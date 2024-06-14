@@ -10,7 +10,7 @@ namespace E_Shop.Controllers
 {
     public class UserController : Controller
     {
-        // GET: User
+        
         DataContext db = new DataContext();
         public ActionResult Update()
         {

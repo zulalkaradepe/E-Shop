@@ -18,9 +18,7 @@
         <tr>
             <td>@item.Name</td>
             <td>@item.Description</td>
-            @*<td>@Html.ActionLink("Sil","Delete", new {item.Id}, new {@class = "btn btn-danger", onclick = "return confirm ('Silmek istiyor musunuz?')"})</td>*@
-            <td><a class="btn btn-danger btnSil" data-id="@item.Id">Sil</a></td>
-            @*<td><a class="btn btn-danger btnSil" data-id="@item.Id" data-url="/AdminCategory/Delete/@item.Id">Sil</a></td>*@
+            <td>@Html.ActionLink("Sil","Delete", new {item.Id}, new {@class = "btn btn-danger", onclick = "return confirm ('Silmek istiyor musunuz?')"})</td>
             <td><a class="btn btn-primary" href="/AdminCategory/Update/@item.Id">Güncelle</a></td>
         </tr>
     }
@@ -30,74 +28,6 @@
 </table>
 
 <script src="~/Scripts/jquery-3.7.1.min.js"></script>
-
-@*<script type="text/javascript">
-        $(function () {
-            $("#table").on("click", ".btnSil", function () {
-                var btn = $(this);
-                bootbox.confirm("Silmek istediğinize emin misiniz?",function(result){
-                    if(result) {
-                        var id = btn.data("id");
-
-                        $.ajax({
-                            type: "GET",
-                            url: "/AdminCategory/Delete/" + id,
-                            success: function () {
-                                btn.parent().parent().remove();
-                            }
-                        });
-                    }else{
-                        bootbox.confirm("Hata oluştu");
-                    }
-                });
-            });
-        });
-    </script>*@
-
-
-@*<script type="text/javascript">
-        $(function () {
-            $(".btnSil").on("click", function (e) {
-                e.preventDefault(); // Sayfa yönlendirmesini engelle
-
-                var url = $(this).data("url"); // Silme URL'sini al
-
-                if (confirm("Silmek istediğinize emin misiniz?")) {
-                    window.location.href = url; // Silme işlemi onaylanırsa URL'ye yönlendir
-                } else {
-                    alert("İşlem iptal edildi.");
-                }
-            });
-        });
-    </script>*@
-
-
-@*<script type="text/javascript">
-        $(function () {
-            $(".btnSil").on("click", function () {
-                var btn = $(this);
-                var id = btn.data("id");
-
-                if (confirm("Silmek istediğinize emin misiniz?")) {
-                    $.ajax({
-                        type: "GET",
-                        url: "/AdminCategory/Delete/" + id,
-                        success: function (response) {
-                            // Silme işlemi başarılı olduğunda, ilgili satırı tablodan kaldır
-                            btn.closest("tr").remove();
-                        },
-                        error: function () {
-                            // Silme işlemi başarısız olduğunda hata mesajı göster
-                            alert("Silme işlemi sırasında bir hata oluştu.");
-                        }
-                    });
-                } else {
-                    alert("İşlem iptal edildi.");
-                }
-            });
-        });
-    </script>*@
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
 

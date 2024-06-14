@@ -12,7 +12,7 @@ namespace E_Shop.Controllers
 {
     public class SalesController : Controller
     {
-        // GET: Sales
+        
         private DataContext db = new DataContext();
         public ActionResult Index(int sayfa = 1)
         {

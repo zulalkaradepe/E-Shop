@@ -13,7 +13,7 @@ namespace E_Shop.Controllers
 
     public class AdminSalesController : Controller
     {
-        // GET: AdminSales
+    
         DataContext db = new DataContext();
         public ActionResult Index(int sayfa = 1)
         {

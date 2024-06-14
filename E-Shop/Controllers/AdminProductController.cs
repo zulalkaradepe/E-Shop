@@ -133,11 +133,6 @@ namespace E_Shop.Controllers
             return PartialView();
 
         }
-        //public PartialViewResult StockYellow()
-        //{
-        //    var kritik = db.Products.Where(x => x.Stock == 50).ToList();
-
-        //    return PartialView(kritik);
-        //}
+   
     }
 }
